@@ -1,0 +1,30 @@
+/*
+color rojo:	#f94e4e
+
+amarillo:	#f9c34e
+
+verde:		#50b036
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #50b036;                /*COLOR DEL FONDO*/
+}
+h1{
+    text-align: center;
+    color: #fff;
+    margin: auto;
+    margin-top: 150px;
+    text-transform: uppercase;
+    
+}
+
+img {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    transition: 0.5s;
+}

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ebf5fc;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 48px 0;
+}
+
+.container .card {
+    position: relative;
+    width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05);
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.container .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #ebf5fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.container .card:hover .box{
+    transform: translateY(-58px);
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05);
+    background: linear-gradient(45deg, #b95ce4, #4f29cd );    
+}
+
+.container .card .box .content {
+    padding: 20px;
+    text-align: center;
+}
+
+.container .card .box .content h2 {         /*TEXTO TRANSPARENTE*/
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 6em;
+    color: rgba(0,0,0,0.05);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.container .card:hover .box .content h2 {
+    color: rgba(0,0,0,0.05);
+}
+
+.container .card .box .content h3 {     /*NUMERO DE TARJETA O NOMBRE*/
+    font-size: 1.8em;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.container .card .box .content p {
+    font-size: 1em;
+    font-weight: 300;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.container .card:hover .box .content h3 { 
+    color: #fff;
+}
+.container .card:hover .box .content p {
+    color: #fff;
+}
+
+.container .card .box .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #03a9f4;        /*COLOR BOTON INICIAL*/
+    margin-top: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #ebf5fc;
+    font-weight: 400;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.2);
+}
+
+.container .card:hover .box .content a {        /*COLOR DEL HOVER EFECTO BOTON*/
+    background: #ff568f;
+}

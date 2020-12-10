@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="principal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Market Electronico</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Market Electronico<span></span></a>        
+        <div class="menuToggle" onclick="togglMenu();"></div>
+        <ul class="barra">
+            <li><a href="#baner" onclick="togglMenu();">Principal</a></li>      
+            <li><a href="#quienes_somos" onclick="togglMenu();">Quienes somos</a></li>
+            <li><a href="#departamentos" onclick="togglMenu();">Departamentos</a></li>            
+            <li><a href="contacto.html" onclick="togglMenu();">Contacto</a></li>
+            <li><a href="contador.html" onclick="togglMenu();">Datos</a></li>          <!--PONER LA PAGINA CONTADOR-->
+            <li><a href="testimonios.html" onclick="togglMenu();">Testimonios</a></li>    <!--PONER LA PAGINA CO LOS ROLES Y COMENTARIOS DEL EQUIPOS-->
+            <li><a href="login.html" onclick="togglMenu();">Ingresar</a></li>            
+        </ul>
+    </header>
+
+    <section class="baner" id="baner">
+        <div class="content">
+            <h2>Bienvenido A Market Electronico</h2>                                       
+            <p>Somos empresa líder 100% mexicana, trabajando para ser siempre los mejores.</p>                    
+            <a href="#quienes_somos" class="leer">Leer Mas</a>                
+        </div>
+    </section>
+    <!--SECCION QUIENES SOMOS-->
+    <section class="quienes_somos" id="quienes_somos">
+        <div class="row">
+            <div class="co150">
+                <h2 class="titleText">Quiénes Somos</h2>
+              <!--<hr class="linea" color="" size="6" width="100%">-->
+              <p>Somos empresa líder 100% mexicana en la distribución mayorista de seguridad electrónica.
+                Nuestros directores cuentan con más de 30 años de experiencia en el mercado.
+                Contamos con presencia en toda la República Mexicana y Centroamérica.                  
+              </p>
+                <p></p>
+            </div>
+        </div>
+    </section>
+    <!--SECCION DEPARTAMENTOS-->
+    <section class="departamentos" id="departamentos">
+        <h2 class="titleText">Departamentos</h2>
+    <div class="contenedor">
+        <!--TARJETA 1-->
+        <div class="card">
+            <div class="box">
+                <div class="contenido">
+                    <h2>VT</h2>
+                    <h3>Ventas</h3>
+                    <p>Este departamento se encarga de hacer cambios en la mercancia </p>
+                    <a href="error404.html">Saber Más</a>
+                </div>
+            </div>
+        </div>
+        
+        <!--TARJETA DOS-->
+        <div class="card">
+            <div class="box">
+                <div class="contenido">
+                    <h2>FT</h2>
+                    <h3>Facturación</h3>
+                    <p>Este departamento se encarga de hacer cambios y aclaraciones en facturas enviadas </p>
+                    <a href="error404.html">Saber Más</a>
+                </div>
+            </div>
+        </div>
+
+        <!--TARJETA TRES-->
+        <div class="card">
+            <div class="box">
+                <div class="contenido">
+                    <h2>DG</h2>
+                    <h3>Direccion General</h3>
+                    <p>Este departamento se encarga de resolver cualquier problema con los departamentos existentes </p>
+                    <a href="error404.html">Saber Más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+
+    <!--SECCION CONTACTO-->
+   <!-- <section>
+        <div class="contactop" id="contacto">
+            <h2 class="titleText">Contacto</h2>
+            <p>Si tiene alguna pregunta, no dude en mandar un correo electronico</p>
+        </div>
+        <div class="contactoform">
+            <h3>Mensaje</h3>
+            <div class="cajastexto">
+                <input type="text" placeholder="Nombre">
+            </div>
+            <div class="cajastexto">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="cajastexto">
+                <textarea placeholder="Mensaje"></textarea>
+            </div>
+            <div class="cajastexto">
+                <input type="submit" value="Enviar">
+            </div>
+        </div>
+    </section>  -->
+
+    <!--FOOTER-->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section_about">
+                <a href="index.html">Market Electronico</a>
+                <p>Somos empresa líder 100% mexicana en la distribución mayorista de seguridad electrónica. Nuestros directores cuentan con más de 30 años de experiencia en el mercado. Contamos con presencia en toda la República Mexicana y Centroamérica.</p>
+            </div>
+            <div class="footer-section_links">
+            </div>
+            <div class="footer-section contact"></div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; Market Electronico | Desing by Manuel, Raul, Brenda, Lucero
+        </div>
+    </div>
+    <!--FIN DEL FOOTER-->
+    
+    <!--JAVA SCRIP BARRA MENU-->
+    <script type="text/JavaScript">
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+
+        function togglMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const barra = document.querySelector('.barra');
+            menuToggle.classList.toggle('active');
+            barra.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

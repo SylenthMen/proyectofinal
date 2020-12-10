@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tarjetas.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Usuario</title>
+</head>
+<body>
+
+    <div class="action">
+        <div class="profile" ondblclick="menuToggle();">
+            <img src="img/user2.jpg" alt="user">
+        </div>
+        <div class="menu">
+            <h3>Lucero Peralta<br><span>Usuario</span></h3>
+            <ul>
+                <li><img src="img/user.png" alt="perfil"><a href="#">Mi Perfil</a></li>
+                <li><img src="img/edit.png" alt="perfil"><a href="#">Estatus Del Reporte</a></li> <!--porcentajes/rojo.html-->
+                <li><img src="img/envelope.png" alt="perfil"><a href="#">Mensajes</a></li>
+                <li><img src="img/settings.png" alt="perfil"><a href="#">Ajustes</a></li>
+                <li><img src="img/question.png" alt="perfil"><a href="#">Ayuda</a></li>
+                <li><img src="img/log-out.png" alt="perfil"><a href="index.html">Cerrar Sesión</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <h1 class="title">¿EN QUE PODEMOS AYUDARTE?</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="img/1.jpg" alt="">
+            <h4>VENTAS</h4>
+            <p>Solicitud en cambios de mercancía.</p><br>
+            <a href="FORMULARIOSMODS/lucero/ventas.html">Enviar Mensaje &#10148;</a>
+        </div>
+        
+        <!--SEGUNDA TARJETA-->
+        <div class="card">
+            <img src="img/2.jpg" alt="">
+            <h4>FACTURACIÓN</h4>
+            <p>Cambios en la factura enviada.</p><br>
+            <a href="FORMULARIOSMODS/lucero/facturacion.html">Enviar Mensaje &#10148;</a>
+        </div>
+        
+        <!--TERCERA TARJETA-->
+        <div class="card">
+            <img src="img/3.jpg" alt="">
+            <h4>DIRECCION GENERAL</h4>
+            <p>Plazo para pagos de nota de crédito.</p><br>
+            <a href="FORMULARIOSMODS/lucero/direcciongeneral.html">Enviar Mensaje &#10148;</a>
+        </div>
+    </div>
+
+    <script>
+        function menuToggle(){
+            const togglemenu = document.querySelector('.menu');
+            togglemenu.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

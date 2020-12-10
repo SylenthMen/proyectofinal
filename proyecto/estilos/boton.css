@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+#boton {
+    padding: 5px 10px;
+    background: #e60073;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#boton a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin: 5px 10px;
+    font-weight: 500;
+}
